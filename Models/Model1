@@ -10,11 +10,11 @@
         <Alias Alias="HasTypeDefinition">i=40</Alias>
         <Alias Alias="HasComponent">i=47</Alias>
         <Alias Alias="UtcTime">i=294</Alias>
-        <Alias Alias="DecimalString">i=12878</Alias>
+        <Alias Alias="NormalizedString">i=12877</Alias>
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="tXCAgSWPVMVZtq2GPVYP9w==" Version="1.6.2"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="FSraydA5jMJ85jyUTtRQFg==" Version="1.6.2"/>
         </Extension>
     </Extensions>
     <UAObject NodeId="ns=1;i=5002" BrowseName="1:BaseObject">
@@ -33,7 +33,7 @@
             <Reference ReferenceType="HasComponent">ns=1;i=6004</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="DecimalString" NodeId="ns=1;i=6006" BrowseName="1:Data_01" AccessLevel="3">
+    <UAVariable DataType="NormalizedString" NodeId="ns=1;i=6006" BrowseName="1:Data_01" AccessLevel="3">
         <DisplayName>Data_01</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
