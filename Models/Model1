@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<UANodeSet xmlns:xsi="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1" 
+xmlns:uax="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1" 
+xmlns="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1" 
+xmlns:s1="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1/Types.xsd"
+xmlns:ua="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1" 
+xmlns:xsd="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1">
     <NamespaceUris>
         <Uri>https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1</Uri>
     </NamespaceUris>
