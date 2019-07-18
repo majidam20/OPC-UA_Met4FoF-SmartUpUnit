@@ -33,11 +33,11 @@
             <Reference ReferenceType="HasComponent">ns=1;i=6004</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="NormalizedString" NodeId="ns=2;s=6006" BrowseName="2:Data_01" AccessLevel="3">
+    <UAVariable DataType="NormalizedString" NodeId="ns=2;s=12877" BrowseName="2:Data_01" AccessLevel="3">
         <DisplayName>Data_01</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">s=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=5002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">s=12877</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=12877</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Float" NodeId="ns=1;i=6007" BrowseName="1:Data_2" AccessLevel="3">
