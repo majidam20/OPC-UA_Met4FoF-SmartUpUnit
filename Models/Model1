@@ -33,7 +33,7 @@
             <Reference ReferenceType="HasComponent">ns=1;i=6004</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="NormalizedString" NodeId="ns=2;s=6006" BrowseName="1:Data_01" AccessLevel="3">
+    <UAVariable DataType="ua:String" NodeId="ns=2;s=6006" BrowseName="2:Data_01" AccessLevel="3">
         <DisplayName>Data_01</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
