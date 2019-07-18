@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" 
+xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1/Types.xsd"
+ xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <NamespaceUris>
         <Uri>https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/edit/master/Models/Model1</Uri>
     </NamespaceUris>
@@ -22,7 +24,7 @@
         <References>
             <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6006</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=6006</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6007</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6009</Reference>
