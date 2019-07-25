@@ -68,7 +68,7 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6006</Reference>
         </References>
         <Value>
-            <uax:String></uax:String>
+            <uax:String>Majid Company</uax:String>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6006" NodeId="ns=1;i=6013" BrowseName="ProductName" MinimumSamplingInterval="1000">
