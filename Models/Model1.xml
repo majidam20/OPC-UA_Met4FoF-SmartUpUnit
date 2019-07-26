@@ -131,8 +131,8 @@
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
         </References>
     </UAVariable>
-    <UAMethod Executable="false" NodeId="ns=1;i=7001" BrowseName="1:Data_o2">
-        <DisplayName>Data_o2</DisplayName>
+    <UAMethod Executable="false" NodeId="ns=1;i=7001" BrowseName="1:Data_o3">
+        <DisplayName>Data_o3</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
         </References>
