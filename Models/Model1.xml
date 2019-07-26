@@ -15,7 +15,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="uL7sxBsrg4EtPwnVHZ5yXA==" Version="1.6.2"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="lciGfj5x+XYim7oW5fkq0g==" Version="1.6.2"/>
         </Extension>
     </Extensions>
     <UAObject NodeId="ns=1;i=5002" BrowseName="1:BaseObject">
@@ -119,7 +119,22 @@
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Double" NodeId="ns=2;i=6012" BrowseName="2:majjjjid" AccessLevel="3">
+    <UAObject NodeId="ns=1;i=5003" BrowseName="1:BaseObject">
+        <DisplayName>BaseObject</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=15957</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6013</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Double" NodeId="ns=1;i=6013" BrowseName="1:mmmm" AccessLevel="3">
+        <DisplayName>mmmm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=1;i=6012" BrowseName="1:majjjjid" AccessLevel="3">
         <DisplayName>majjjjid</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
