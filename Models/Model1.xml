@@ -13,8 +13,8 @@
         <Alias Alias="Double">i=11</Alias>
         <Alias Alias="String">i=12</Alias>
         <Alias Alias="DateTime">i=13</Alias>
-        <Alias Alias="Guid">i=14</Alias>
         <Alias Alias="ByteString">i=15</Alias>
+        <Alias Alias="Structure">i=22</Alias>
         <Alias Alias="Organizes">i=35</Alias>
         <Alias Alias="HasTypeDefinition">i=40</Alias>
         <Alias Alias="HasProperty">i=46</Alias>
@@ -26,7 +26,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="d+msGmz90q9VZ/W6eB58PQ==" Version="1.6.2"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="Qz70dZxypMwAsoXG4SPGzA==" Version="1.6.2"/>
         </Extension>
     </Extensions>
     <UAObject NodeId="ns=1;i=5002" BrowseName="1:BaseObject">
@@ -124,19 +124,34 @@
             <uax:ByteString></uax:ByteString>
         </Value>
     </UAVariable>
-    <UAVariable DataType="Guid" NodeId="ns=1;i=6011" BrowseName="1:BaseDataVariable" AccessLevel="3">
+    <UAVariable DataType="Structure" NodeId="ns=1;i=6011" BrowseName="1:BaseDataVariable" AccessLevel="3">
         <DisplayName>BaseDataVariable</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6009</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
         </References>
     </UAVariable>
-    <UAMethod Executable="false" NodeId="ns=1;i=7001" BrowseName="1:Data_o3">
-        <DisplayName>Data_o3</DisplayName>
+    <UAMethod Executable="false" NodeId="ns=1;i=7001" BrowseName="1:Data_o2">
+        <DisplayName>Data_o2</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
         </References>
     </UAMethod>
+    <UAObject NodeId="ns=1;i=5003" BrowseName="1:BaseObject">
+        <DisplayName>BaseObject</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=15957</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6013</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Double" NodeId="ns=1;i=6013" BrowseName="1:mmmm" AccessLevel="3">
+        <DisplayName>mmmm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
     <UAObject SymbolicName="https___github_com_majidam20_OPC_UA_Met4FoF_SmartUpUnit_blob_master_Models_Model1_xml" NodeId="ns=1;i=5001" BrowseName="1:https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Model1.xml">
         <DisplayName>https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Model1.xml</DisplayName>
         <Description>Provides the metadata for a namespace used by the server.</Description>
@@ -226,21 +241,6 @@
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
-        </References>
-    </UAVariable>
-    <UAObject NodeId="ns=1;i=5003" BrowseName="1:BaseObject">
-        <DisplayName>BaseObject</DisplayName>
-        <References>
-            <Reference ReferenceType="Organizes" IsForward="false">i=15957</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6013</Reference>
-        </References>
-    </UAObject>
-    <UAVariable DataType="Double" NodeId="ns=1;i=6013" BrowseName="1:mmmm" AccessLevel="3">
-        <DisplayName>mmmm</DisplayName>
-        <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
         </References>
     </UAVariable>
 </UANodeSet>
