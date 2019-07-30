@@ -1529,6 +1529,7 @@
       <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
       <xs:element name="WriteMask" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="UserWriteMask" type="xs:unsignedInt" minOccurs="0" />
+	  <xs:element name="Majid attribute all" type="xs:unsignedInt" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="NodeAttributes" type="tns:NodeAttributes" />
@@ -1562,6 +1563,7 @@
           <xs:element name="UserAccessLevel" type="xs:unsignedByte" minOccurs="0" />
           <xs:element name="MinimumSamplingInterval" type="xs:double" minOccurs="0" />
           <xs:element name="Historizing" type="xs:boolean" minOccurs="0" />
+		  <xs:element name="majid attribute end" type="xs:boolean" minOccurs="0" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
