@@ -661,7 +661,7 @@
           <xs:element name="UserAccessLevel" type="xs:unsignedByte" minOccurs="0" />
           <xs:element name="MinimumSamplingInterval" type="xs:double" minOccurs="0" />
           <xs:element name="Historizing" type="xs:boolean" minOccurs="0" />
-		  <xs:attribute name="Majid Attribute" type="xs:String" default="desc"></xs:attribute>
+		  <xs:element name="Majid Attribute" type="xs:string" default="desc"></xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
