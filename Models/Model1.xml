@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Model1.xml/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <NamespaceUris>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
+ xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" 
+ xmlns:s1="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/UANodeSet.xsd" 
+ xmlns:ua="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/UANodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ 
+<!--http://unifiedautomation.com/Configuration/NodeSet.xsd-->
+ <NamespaceUris>
         <Uri>https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Model1.xml</Uri>
     </NamespaceUris>
     <Models>
@@ -234,6 +239,8 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
         </References>
+ 
+		
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6020" BrowseName="StaticStringNodeIdPattern">
         <DisplayName>StaticStringNodeIdPattern</DisplayName>
