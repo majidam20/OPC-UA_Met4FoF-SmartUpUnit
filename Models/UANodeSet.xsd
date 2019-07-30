@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     targetNamespace="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd"
     elementFormDefault="qualified"
@@ -264,6 +264,7 @@
     <xs:attribute name="WriteMask" type="WriteMask" default="0"></xs:attribute>
     <xs:attribute name="UserWriteMask" type="WriteMask" default="0"></xs:attribute>
     <xs:attribute name="SymbolicName" type="SymbolicName" use="optional"></xs:attribute>
+	<xs:attribute name="majid symbolic" type="SymbolicName" use="optional"></xs:attribute>
   </xs:complexType>
 
   <xs:complexType name="UAInstance">
@@ -302,7 +303,7 @@
         <xs:attribute name="UserAccessLevel" type="AccessLevel" default="1"></xs:attribute>
         <xs:attribute name="MinimumSamplingInterval" type="Duration" default="0"></xs:attribute>
         <xs:attribute name="Historizing" type="xs:boolean" default="false"></xs:attribute>
-		<xs:attribute name="Majid Attribute" type="xs:String" default="desc"></xs:attribute>
+		<xs:attribute name="Majid Attribute" type="xs:string" default="desc"></xs:attribute>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
