@@ -660,7 +660,7 @@
           <xs:element name="AccessLevel" type="xs:unsignedByte" minOccurs="0" />
           <xs:element name="UserAccessLevel" type="xs:unsignedByte" minOccurs="0" />
           <xs:element name="MinimumSamplingInterval" type="xs:double" minOccurs="0" />
-          <xs:element name="Historizing" type="xs:boolean" minOccurs="0" />
+          <xs:element name="Historizingg" type="xs:boolean" minOccurs="0" />
 		  <xs:element name="Historizing2" type="xs:boolean" minOccurs="0" />
         </xs:sequence>
       </xs:extension>
@@ -1493,7 +1493,7 @@
       <xs:enumeration value="DisplayName_64" />
       <xs:enumeration value="EventNotifier_128" />
       <xs:enumeration value="Executable_256" />
-      <xs:enumeration value="Historizing_512" />
+      <xs:enumeration value="Historizingg_512" />
 	   <xs:enumeration value="Historizing2_512" />
       <xs:enumeration value="InverseName_1024" />
       <xs:enumeration value="IsAbstract_2048" />
@@ -1562,7 +1562,7 @@
           <xs:element name="AccessLevel" type="xs:unsignedByte" minOccurs="0" />
           <xs:element name="UserAccessLevel" type="xs:unsignedByte" minOccurs="0" />
           <xs:element name="MinimumSamplingInterval" type="xs:double" minOccurs="0" />
-          <xs:element name="Historizing" type="xs:boolean" minOccurs="0" />
+          <xs:element name="Historizingg" type="xs:boolean" minOccurs="0" />
 		   <xs:element name="Historizing2" type="xs:boolean" minOccurs="0" />
         </xs:sequence>
       </xs:extension>
@@ -1871,7 +1871,7 @@
       <xs:enumeration value="DisplayName_64" />
       <xs:enumeration value="EventNotifier_128" />
       <xs:enumeration value="Executable_256" />
-      <xs:enumeration value="Historizing_512" />
+      <xs:enumeration value="Historizingg_512" />
 	  <xs:enumeration value="Historizing2_512" />
       <xs:enumeration value="InverseName_1024" />
       <xs:enumeration value="IsAbstract_2048" />
