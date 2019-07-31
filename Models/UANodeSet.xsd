@@ -143,7 +143,7 @@
     <xs:restriction base="xs:string"></xs:restriction>
   </xs:simpleType>
   
-  <xs:simpleType name="majid symbolic">
+  <xs:simpleType name="majid Attribute">
     <xs:restriction base="xs:string"></xs:restriction>
   </xs:simpleType>
 
