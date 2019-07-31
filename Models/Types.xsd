@@ -1,8 +1,8 @@
 <xs:schema
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
-  xmlns:tns="http://opcfoundation.org/UA/2008/02/Types.xsd"
-  targetNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:ua="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Types.xsd"
+  xmlns:tns="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Types.xsd"
+  targetNamespace="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Types.xsd"
   elementFormDefault="qualified"
 >
   <xs:element name="Boolean" nillable="true" type="xs:boolean" />
@@ -661,6 +661,7 @@
           <xs:element name="UserAccessLevel" type="xs:unsignedByte" minOccurs="0" />
           <xs:element name="MinimumSamplingInterval" type="xs:double" minOccurs="0" />
           <xs:element name="Historizing" type="xs:boolean" minOccurs="0" />
+		  <xs:element name="Historizing2" type="xs:boolean" minOccurs="0" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1493,6 +1494,7 @@
       <xs:enumeration value="EventNotifier_128" />
       <xs:enumeration value="Executable_256" />
       <xs:enumeration value="Historizing_512" />
+	   <xs:enumeration value="Historizing2_512" />
       <xs:enumeration value="InverseName_1024" />
       <xs:enumeration value="IsAbstract_2048" />
       <xs:enumeration value="MinimumSamplingInterval_4096" />
@@ -1561,6 +1563,7 @@
           <xs:element name="UserAccessLevel" type="xs:unsignedByte" minOccurs="0" />
           <xs:element name="MinimumSamplingInterval" type="xs:double" minOccurs="0" />
           <xs:element name="Historizing" type="xs:boolean" minOccurs="0" />
+		   <xs:element name="Historizing2" type="xs:boolean" minOccurs="0" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1869,6 +1872,7 @@
       <xs:enumeration value="EventNotifier_128" />
       <xs:enumeration value="Executable_256" />
       <xs:enumeration value="Historizing_512" />
+	  <xs:enumeration value="Historizing2_512" />
       <xs:enumeration value="InverseName_1024" />
       <xs:enumeration value="IsAbstract_2048" />
       <xs:enumeration value="MinimumSamplingInterval_4096" />
