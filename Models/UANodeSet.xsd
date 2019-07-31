@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
-    targetNamespace="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/UANodeSet.xsd"
+    targetNamespace="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd"
     elementFormDefault="qualified"
-    xmlns="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/UANodeSet.xsd"
+    xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
   <xs:element name="UANodeSet">
@@ -140,6 +140,10 @@
   </xs:complexType>
 
   <xs:simpleType name="NodeId">
+    <xs:restriction base="xs:string"></xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="majid symbolic">
     <xs:restriction base="xs:string"></xs:restriction>
   </xs:simpleType>
 
