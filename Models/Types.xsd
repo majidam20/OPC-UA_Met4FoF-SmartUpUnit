@@ -1,8 +1,8 @@
 <xs:schema
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
-  xmlns:tns="http://opcfoundation.org/UA/2008/02/Types.xsd"
-  targetNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:ua="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Types.xsd"
+  xmlns:tns="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Types.xsd"
+  targetNamespace="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Types.xsd"
   elementFormDefault="qualified"
 >
   <xs:element name="Boolean" nillable="true" type="xs:boolean" />
@@ -169,6 +169,13 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="NodeId" type="tns:NodeId" nillable="true"></xs:element>
+  
+    <xs:complexType name="Majid Attribute">
+    <xs:sequence>
+      <xs:element name="Identifier" type="xs:string" minOccurs="0" maxOccurs="1" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Majid Attribute" type="tns:Majid Attribute" nillable="true"></xs:element>
 
   <xs:complexType name="ListOfNodeId">
     <xs:sequence>
@@ -587,6 +594,7 @@
       <xs:element name="WriteMask" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="UserWriteMask" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="References" type="tns:ListOfReferenceNode" minOccurs="0" nillable="true" />
+	  	<xs:attribute name="majid symbolic" type="SymbolicName" use="optional"></xs:attribute>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Node" type="tns:Node" />
