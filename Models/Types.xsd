@@ -594,7 +594,7 @@
       <xs:element name="WriteMask" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="UserWriteMask" type="xs:unsignedInt" minOccurs="0" />
       <xs:element name="References" type="tns:ListOfReferenceNode" minOccurs="0" nillable="true" />
-	  	<xs:attribute name="majid symbolic" type="SymbolicName" use="optional"></xs:attribute>
+	  	<xs:attribute name="majid symbolic" type="ua:LocalizedText" minOccurs="0" nillable="true""></xs:attribute>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Node" type="tns:Node" />
