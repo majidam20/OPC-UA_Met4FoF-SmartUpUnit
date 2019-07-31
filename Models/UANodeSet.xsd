@@ -301,7 +301,7 @@
         <xs:attribute name="AccessLevel" type="AccessLevel" default="1"></xs:attribute>
         <xs:attribute name="UserAccessLevel" type="AccessLevel" default="1"></xs:attribute>
         <xs:attribute name="MinimumSamplingInterval" type="Duration" default="0"></xs:attribute>
-        <xs:attribute name="Historizing" type="xs:boolean" default="false"></xs:attribute>
+        <xs:attribute name="Historizingg" type="xs:boolean" default="false"></xs:attribute>
 		 <xs:attribute name="Historizing2" type="xs:boolean" default="false"></xs:attribute>
       </xs:extension>
     </xs:complexContent>
