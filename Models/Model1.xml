@@ -2,7 +2,7 @@
 <UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns:uax="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Types.xsd"
  xmlns="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/UANodeSet.xsd"
- xmlns:s1="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Model1.xml" 
+ xmlns:s1="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/Types.xsd" 
  xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd"
  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <NamespaceUris>
