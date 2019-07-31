@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
-    targetNamespace="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd"
+    targetNamespace="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/UANodeSet.xsd"
     elementFormDefault="qualified"
-    xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd"
+    xmlns="https://github.com/majidam20/OPC-UA_Met4FoF-SmartUpUnit/blob/master/Models/UANodeSet.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
   <xs:element name="UANodeSet">
