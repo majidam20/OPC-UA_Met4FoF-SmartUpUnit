@@ -1,0 +1,16 @@
+ipykernel
+numpy
+scikit-learn
+scikit-multiflow
+scipy
+matplotlib
+pandas
+seaborn
+osbrain
+dash
+dash-cytoscape
+networkx
+multiprocess
+h5py
+requests
+plotly
