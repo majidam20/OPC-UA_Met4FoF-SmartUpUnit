@@ -27,6 +27,8 @@ import pandas as pd
 import csv
 from datetime import datetime
 
+import numpy as np
+from numpy_ringbuffer import RingBuffer
 
 
 #from skmultiflow.data.file_stream import FileStream
@@ -46,19 +48,23 @@ class SensorGeneratorAgent(AgentMET4FOF):
             self.stream = SensorGenerator()
             self.stream.prepare_for_use()
             self.counter = 0
-            self.start = datetime.now().second
-
+            self.start =0
+            self.r=[]
     def agent_loop(self):
         if self.current_state == "Running":
-            #sensor_data1,
-            sensor_data2 = self.stream.next_sample() #dictionary
-            self.counter +=1
-            print('starttttttttttttttttttttttttttttttttttttttttttttttt:   ' + str(self.start))
-            #self.log_info("Counter "+str(self.counter))
-            if (datetime.now().second)-self.start>=5:
-                print('enddddddddddddddddddddddddddddddddddddddddddddddddd:   ' + str(datetime.now().second))
-                print('outputttttttttttttttttttttttttttttttttttttttttttttt:   '+str(self.counter))
-            return self.send_output({'gps_data':sensor_data2})
+
+            sensor_data2 = self.stream.next_sample()
+            #return self.send_output({'gps_data':sensor_data2})
+            #r = RingBuffer(capacity=1000, dtype=np.float)
+            #r.append( sensor_data2 )
+            self.r.append(sensor_data2)
+            self.counter += 1
+            if self.counter == 10:
+               #return \
+               self.send_output(dict(gps_data=self.r))
+               self.r=[]
+               self.counter=0
+
 
 
 
@@ -68,7 +74,7 @@ def main():
 
     #init agents by adding into the agent network
     gen_agent = agentNetwork.add_agent(agentType= SensorGeneratorAgent)
-    gen_agent.init_agent_loop(loop_wait=.001)
+   # gen_agent.init_agent_loop(loop_wait=.001)
     monitor_agent = agentNetwork.add_agent(agentType= MonitorAgent)
 
     #connect agents by either way:
@@ -87,13 +93,13 @@ def main():
 
 if __name__ == '__main__':
    main()
-
+'''
 if __name__ == '__main__':
    agt_net = AgentNetwork(connect=True)
    monitor_agent = agt_net.get_agent("MonitorAgent_1")
    memory = monitor_agent.get_attr("memory")  # your collected sensor data should be here
    print(memory)
-# In[ ]:
+'''
 
 
 

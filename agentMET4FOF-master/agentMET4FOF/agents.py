@@ -16,6 +16,7 @@ from osbrain import NSProxy
 from osbrain import run_agent
 from osbrain import run_nameserver
 from plotly import tools as tls
+from datetime import datetime
 
 import agentMET4FOF.dashboard.Dashboard as Dashboard
 import agentMET4FOF.dashboard.Dashboard_Control as Dashboard_Control
@@ -170,7 +171,8 @@ class AgentMET4FOF(Agent):
 
         # LOGGING
         if self.log_mode:
-            self.log_info("Sending: "+str(data))
+            #self.log_info("Sending: "+str(data))
+            pass
 
         return packed_data
 
@@ -435,12 +437,12 @@ class _AgentController(AgentMET4FOF):
         name += "_"+str(self.get_agent_name_count(agent_name))
         return name
 
-    def add_module(self, name=" ", agentType= AgentMET4FOF, log_mode=True):
+    def add_module(self, name=" ", agentType= AgentMET4FOF, log_mode=False):
         if name == " ":
             new_name= self.generate_module_name_byType(agentType)
         else:
             new_name= self.generate_module_name_byUnique(name)
-        new_agent = run_agent(new_name, base=agentType, attributes=dict(log_mode=True), nsaddr=self.ns.addr())
+        new_agent = run_agent(new_name, base=agentType, attributes=dict(log_mode=log_mode), nsaddr=self.ns.addr())
 
         if log_mode:
             new_agent.set_logger(self._get_logger())
@@ -749,7 +751,7 @@ class AgentNetwork:
         agent_names = self._get_controller().agents()
         return agent_names
 
-    def add_agent(self, name=" ", agentType= AgentMET4FOF, log_mode=True):
+    def add_agent(self, name=" ", agentType= AgentMET4FOF, log_mode=False):
         """
         Instantiates a new agent in the network.
         Parameters
@@ -956,3 +958,39 @@ class _Logger(AgentMET4FOF):
                 self.save_cycles+=1
             except:
                 raise Exception
+
+'''
+class DataRateMesuringAgent(AgentMET4FOF):
+    """
+    Unique Agent for storing plots and data from messages received from input agents.
+    The dashboard searches for Monitor Agents' `memory` and `plots` to draw the graphs
+    "plot" channel is used to receive base64 images from agents to plot on dashboard
+    Attributes
+    ----------
+    memory : dict
+        Dictionary of format `{agent1_name : agent1_data, agent2_name : agent2_data}`
+    plots : dict
+        Dictionary of format `{agent1_name : agent1_plot, agent2_name : agent2_plot}`
+    """
+
+    def init_parameters(self):
+        self.memory = {}
+        self.plots = {}
+        self.receivedPacketCount=0
+        self.firstPackedTimesStamp=0
+
+    def on_received_message(self, message):
+        if self.receivedPacketCount == 0:
+            self.firstPackedTimesStamp=datetime.now()
+        self.receivedPacketCount += 1
+
+        if self.receivedPacketCount%1000 == 0:
+            TimeSinceStart=datetime.now()-self.firstPackedTimesStamp
+            TimeSinceStart=TimeSinceStart.seconds+TimeSinceStart.microseconds*1e-6
+            print("time since start ="+str(TimeSinceStart))
+            Datarate=self.receivedPacketCount/TimeSinceStart
+            print("Datarate = "+str(Datarate))
+
+    def reset(self):
+        super(MonitorAgent, self).reset()
+'''
