@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamespaceUris />
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="Structure">i=22</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+  </Aliases>
+  <UAObject BrowseName="0:myobject_test1" NodeId="i=20001" ParentNodeId="i=85">
+    <DisplayName>myobject_test1</DisplayName>
+    <Description>The base type for all object nodes.</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="Organizes">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">i=20002</Reference>
+    </References>
+  </UAObject>
+  <UAVariable BrowseName="0:myvar_test1" DataType="Structure" NodeId="i=20002" ParentNodeId="i=20001">
+    <DisplayName>myvar_test1</DisplayName>
+    <Description>myvar_test1</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasComponent">i=20001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasProperty">i=20003</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable BrowseName="0:mypro_test1" DataType="Boolean" NodeId="i=20003" ParentNodeId="i=20002">
+    <DisplayName>mypro_test1</DisplayName>
+    <Description>mypro_test1</Description>
+    <References>
+      <Reference IsForward="false" ReferenceType="HasProperty">i=20002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:Boolean>true</uax:Boolean>
+    </Value>
+  </UAVariable>
+</UANodeSet>
