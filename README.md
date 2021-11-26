@@ -10,6 +10,9 @@ under the project
 
 With the provided code, we showcase an agent-based machine learning approach for
  online anomaly detection of (in our case simulated) sensor readings.
+ 
+ You could find some recorded videos in below link:
+https://drive.google.com/drive/folders/1T912fNYV92WM99DI_22slXavIx9_oYRh?usp=sharing 
   
 ## Getting started
 
@@ -70,7 +73,6 @@ In your Windows command prompt, execute the following to terminate all python pr
 
 ```shell
 > taskkill /f /im python.exe /t
->
 ```
 
 #### Killing all Python processes on Mac and Linux
@@ -79,7 +81,6 @@ In your terminal, execute the following to terminate all python processes.
 
 ```shell
 $ pkill python
-$
 ```
 
 ## References
