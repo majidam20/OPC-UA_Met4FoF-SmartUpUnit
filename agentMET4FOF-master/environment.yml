@@ -1,8 +1,9 @@
 name: agentMET4FOF
 channels:
+    - defaults
     - conda-forge
 dependencies:
-    - python >= 3
+    - python >= 3.7
     - ipykernel
     - numpy
     - scikit-learn
@@ -18,6 +19,4 @@ dependencies:
     - requests
     # pip dependencies have to be provided in `requirements.txt` syntax
     - pip:
-        - osbrain
-        - dash-cytoscape
-        - plotly
+        - -r requirements.txt
