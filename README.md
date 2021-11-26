@@ -42,7 +42,7 @@ Updates
 
 
 ## Screenshot of web visualization
-![Web Screenshot](docs/screenshot_met4fof.png)
+![Web Screenshot](agentMET4FOF-master/docs/screenshot_met4fof.png)
 
 Note
 ---
