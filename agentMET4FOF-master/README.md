@@ -7,15 +7,15 @@ This is supported by European Metrology Programme for Innovation and Research (E
 
 About
 ---
- - How can metrological input be incorporated into an agent-based system for addressing uncertainty of machine learning in future manufacturing?
+ - How can metrological input be incorporated into an agent-based system for addressing the uncertainty of machine learning in future manufacturing?
  - Includes agent-based simulation and implementation
  - Readthedocs documentation is available at (https://agentmet4fof.readthedocs.io)
 
 Get started
 ---
-First clone the repository to your local machine as described
+First, clone the repository to your local machine as described
 [here](https://help.github.com/en/articles/cloning-a-repository). To get started
-with your present *Anaconda* installation just go to *Anaconda
+with your present *Anaconda* installation, go to *Anaconda
 prompt*, navigate to your local clone
 ```
 cd /your/local/folder/agentMet4FoF
@@ -24,13 +24,13 @@ and execute
 ```
 conda env create --file environment.yml 
 ```
-This will create an *Anaconda* virtual environment with all dependencies
-satisfied. If you don't have *Anaconda* installed already follow [this guide
+This command will create an *Anaconda* virtual environment with all dependencies
+satisfied. If you don't have *Anaconda* installed already, follow [this guide
 ](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/download.html)
 first, then create the virtual environment as stated above and then proceed.
 
 First take a look at the [tutorials](./tutorials/tutorial_1_generator_agent.py) and [examples](./examples)
-or start hacking the [main_agent_network.py](main_agent_network.py) if you already are
+Alternatively, start hacking the [main_agent_network.py](main_agent_network.py) if you are already
 familiar with agentMet4FoF and want to customize your agents' network.
 
 Updates
@@ -46,4 +46,4 @@ Updates
 
 Note
 ---
- - In the event of agents not terminating cleanly, run ```taskkill /f /im python.exe /t``` in Windows Command Prompt to terminate all background python processes.
+ - In the event of agents not terminating cleanly, run ```taskkill /f /im python.exe /t``` in Windows Command Prompt to remove all background python processes.
