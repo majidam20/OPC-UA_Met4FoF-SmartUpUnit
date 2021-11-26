@@ -1,15 +1,15 @@
 ## Anomaly detection
-_agentMet4FoF_ use case anomaly detection based on machine-learning
+_agentMet4FoF_ use case anomaly detection based on machine-learning approaches
 
-With the provided code, we showcase an agent-based machine learning approach for
+With the provided code, we present an agent-based machine learning approach for
  online anomaly detection of (in our case simulated) sensor readings.
  
- You could find some recorded videos in below link:
+ You can find some recorded videos in below link:
 https://drive.google.com/drive/folders/1T912fNYV92WM99DI_22slXavIx9_oYRh?usp=sharing 
   
 ## Getting started
 
-If you are using PyCharm, you will already find proper run configurations at the
+Using PyCharm, you will already find proper run configurations at the
 appropriate place in the IDE. It expects that you have prepared and defined a default
 interpreter.
 
@@ -78,7 +78,7 @@ $ pkill python
 
 ## References
 
-For details about the agents, refer to the
+For details about the agents, please refer to the
 [upstream repository _agentMET4FOF_](https://github.com/bangxiangyong/agentMET4FOF)
 
 
