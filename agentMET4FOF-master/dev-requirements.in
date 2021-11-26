@@ -1,0 +1,8 @@
+pytest
+pytest-timeout
+requests
+psutil
+# This pinning is necessary due to a vunerability of older versions. It can be removed
+# as soon as we are able to recompile all dependencies cleanly and end up with an
+# appropriate version of py.
+py>=1.10.0
