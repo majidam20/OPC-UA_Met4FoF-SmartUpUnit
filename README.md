@@ -29,7 +29,7 @@ satisfied. If you don't have *Anaconda* installed already, follow [this guide
 ](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/download.html)
 first, then create the virtual environment as stated above and then proceed.
 
-First take a look at the [tutorials](.agentMET4FOF-master/tutorials/tutorial_1_generator_agent.py) and [examples](./examples)
+First take a look at the [tutorials](agentMET4FOF-master/tutorials/tutorial_1_generator_agent.py) and [examples](agentMET4FOF-master/examples)
 Alternatively, start hacking the [main_agent_network.py](main_agent_network.py) if you are already
 familiar with agentMet4FoF and want to customize your agents' network.
 
