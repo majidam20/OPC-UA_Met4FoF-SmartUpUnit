@@ -1,20 +1,14 @@
 ## Anomaly detection
-This investigation applies anomaly detection approaches to operating data from an industrial machine of project _agentMet4FoF_.
+This investigation applies anomaly detection approaches to moving data from an industrial machine of project _agentMet4FoF_.
 
 With the provided code, we present an agent-based machine learning approach for
-online anomaly detection of (in our case simulated) sensor readings.
+online anomaly detection of (in our case simulated) sensor treatments.
  
- You can find some recorded videos in below link:
+ You can find some recorded videos at the following link:
 
 https://drive.google.com/drive/folders/1T912fNYV92WM99DI_22slXavIx9_oYRh?usp=sharing 
   
 ## Getting started
-
-Using PyCharm, you will already find proper run configurations at the
-appropriate place in the IDE. It expects that you have prepared and defined a default
-interpreter.
-
-If you are not using PyCharm, of course, you can run the script files as usual.
 
 If you have any questions, please get in touch with
 [the author](https://github.com/majidam20).
@@ -39,8 +33,7 @@ in a folder of your choice.
 
 ### Create a virtual environment on Mac and Linux
 
-In your terminal, execute the following to set up a virtual environment in a folder of
- your choice.
+In your terminal, execute the following to set up a virtual environment in a folder of your choice.
 
 ```shell
 $ python3.7 -m venv my_anomaly_detection_use_case_env
@@ -51,7 +44,7 @@ $ source my_anomaly_detection_use_case_env/bin/activate
 
 ### Scripts
 
-The interesting parts you find in the file.
+The main codes of the anomaly detection approach are placed in the following file.
 
 - `agentMET4FOF_anomaly_detection/anomaly_detection.py`
 
@@ -79,13 +72,13 @@ $ pkill python
 
 ## References
 
-For details about the agents, please refer to the
+To find more details about the agents, please refer to the
 [upstream repository _agentMET4FOF_](https://github.com/bangxiangyong/agentMET4FOF)
 
 
 ## Developing
 
-For development and testing, you should as well install the development dependencies
+To develop and test issues, you should install the development dependencies
 provided in the dev-requirements.txt for Python 3.8 as well.
  
 ```python
