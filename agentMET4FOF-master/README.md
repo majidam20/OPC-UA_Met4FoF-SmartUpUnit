@@ -2,9 +2,10 @@
 This investigation applies anomaly detection approaches to operating data from an industrial machine of project _agentMet4FoF_.
 
 With the provided code, we present an agent-based machine learning approach for
- online anomaly detection of (in our case simulated) sensor readings.
+online anomaly detection of (in our case simulated) sensor readings.
  
  You can find some recorded videos in below link:
+
 https://drive.google.com/drive/folders/1T912fNYV92WM99DI_22slXavIx9_oYRh?usp=sharing 
   
 ## Getting started
